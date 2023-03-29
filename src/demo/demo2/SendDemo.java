@@ -21,9 +21,9 @@ public class SendDemo {
         InetAddress address = InetAddress.getByName("224.0.0.2");
         int port = 10000;
 
-        DatagramPacket ds = new DatagramPacket(bytes,bytes.length,address,port);
+        DatagramPacket dp = new DatagramPacket(bytes,bytes.length,address,port);
 
-        ms.send(ds);
+        ms.send(dp);
 
         ms.close();
     }
