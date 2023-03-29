@@ -14,6 +14,9 @@ public class Demo1 {
     public static void main(String[] args) throws UnknownHostException {
         InetAddress address = InetAddress.getByName("192.168.137.1");
         System.out.println(address);
+
+        String name = address.getHostName();
+        System.out.println(name);
     }
 
 }
