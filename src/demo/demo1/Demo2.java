@@ -1,4 +1,4 @@
-package demo;
+package demo.demo1;
 
 import java.io.IOException;
 import java.net.*;
@@ -6,7 +6,7 @@ import java.net.*;
 /**
  * IntelliJ IDEA-2018 3.2.
  *
- * @ClassName: demo.Demo2
+ * @ClassName: demo.demo1.Demo2
  * @Date: 2023/03/29/13:51
  * @Author: 李鹏程
  * @Description:DUP发送数据
