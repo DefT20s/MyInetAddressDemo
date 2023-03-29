@@ -7,7 +7,7 @@ import java.net.*;
  * @ClassName: Demo2
  * @Date: 2023/03/29/13:51
  * @Author: 李鹏程
- * @Description:DUP发送和接收数据
+ * @Description:DUP发送数据
  */
 public class Demo2 {
     public static void main(String[] args) throws IOException {
