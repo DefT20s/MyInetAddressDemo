@@ -17,7 +17,6 @@ public class ReceiveWork {
         DatagramSocket ds = new DatagramSocket(10086);
 
         byte[] bytes = new byte[1024];
-
         DatagramPacket dp = new DatagramPacket(bytes,bytes.length);
 
         while (true) {

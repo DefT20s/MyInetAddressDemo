@@ -18,7 +18,6 @@ import java.util.Scanner;
 public class SendWork {
     public static void main(String[] args) throws IOException {
         DatagramSocket ds = new DatagramSocket();//随机端口
-
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("输入你要说的话：");
