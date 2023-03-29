@@ -1,3 +1,5 @@
+package demo;
+
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -7,7 +9,7 @@ import java.net.SocketException;
 /**
  * IntelliJ IDEA-2018 3.2.
  *
- * @ClassName: Demo3
+ * @ClassName: demo.Demo3
  * @Date: 2023/03/29/14:05
  * @Author: 李鹏程
  * @Description:UDP接收数据

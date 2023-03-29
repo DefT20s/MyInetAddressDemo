@@ -1,10 +1,12 @@
+package demo;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
  * IntelliJ IDEA-2018 3.2.
  *
- * @ClassName: Demo1
+ * @ClassName: demo.Demo1
  * @Date: 2023/03/29/13:16
  * @Author: 李鹏程
  * @Description:
