@@ -25,7 +25,7 @@ public class ReceiveWork {
 
             byte[] data = dp.getData();
             int len = data.length;
-            String ip = dp.getAddress().getHostName();
+            String ip = dp.getAddress().getHostAddress();
             String name = dp.getAddress().getHostName();
 
             System.out.println("ip:"+ip);
