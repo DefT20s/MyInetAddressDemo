@@ -14,22 +14,23 @@ import java.util.Scanner;
  */
 public class ReceiveWork {
     public static void main(String[] args) throws IOException {
-        DatagramSocket ds = new DatagramSocket();//随机端口
+        DatagramSocket ds = new DatagramSocket(10086);
 
-        Scanner sc = new Scanner(System.in);
+        byte[] bytes = new byte[1024];
+
+        DatagramPacket dp = new DatagramPacket(bytes,bytes.length);
+
         while (true) {
-            System.out.println("输入你要说的话：");
-            String str = sc.nextLine();
-            if (str.equals("886"))break;
-            byte[] bytes =  str.getBytes();
-            InetAddress address = InetAddress.getByName("127.0.0.1");
-            int port = 10086;
+            ds.receive(dp);
 
-            DatagramPacket dp = new DatagramPacket(bytes,bytes.length,address,port);
+            byte[] data = dp.getData();
+            int len = data.length;
+            String ip = dp.getAddress().getHostName();
+            String name = dp.getAddress().getHostName();
 
-            ds.send(dp);
+            System.out.println("ip:"+ip);
+            System.out.println("主机名:"+name);
+            System.out.println("消息:"+new String(data,0,len));
         }
-
-        ds.close();
     }
 }
